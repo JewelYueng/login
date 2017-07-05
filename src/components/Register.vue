@@ -195,18 +195,21 @@
                   message: res.data.message,
                   type: 'error'
                 })
+                this.imgUrl = "/AssWeCan/home/code?date=" + Date()
               }
             }, err => {
               this.$message({
                 message: err.data.message,
                 type: 'error'
               })
+              this.imgUrl = "/AssWeCan/home/code?date=" + Date()
             })
           } else {
             this.$message({
               message: '请正确填写表单信息',
               type: 'error'
             })
+            this.imgUrl = "/AssWeCan/home/code?date=" + Date()
           }
         })
       },
