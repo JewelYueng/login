@@ -116,7 +116,10 @@
       let validatePass = (rule, value, callback) => {
         if (value === '') {
           callback(new Error('请输入密码'));
-        } else {
+        } else if(value.length < 6 || value.length > 20){
+          callback(new Error('请输入6-20位密码'))
+        }
+        else {
           if (this.ruleForm.checkPass !== '') {
             this.$refs.dynamicValidateForm.validateField('checkPass');
           }
