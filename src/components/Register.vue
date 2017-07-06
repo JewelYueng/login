@@ -46,7 +46,6 @@
 
 <style lang="less" rel="stylesheet/less">
   #box {
-    margin: 100px auto;
     //height: 430px;
     width: 350px;
     border-radius: 5px;

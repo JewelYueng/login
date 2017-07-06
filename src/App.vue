@@ -12,7 +12,15 @@ export default {
 
 <style>
   body{
-    background-image: url('../static/background.jpg')
+    background-image: url('/AssWeCan/static/img/background.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
   }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -20,6 +28,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 </style>

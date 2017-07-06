@@ -40,12 +40,9 @@
   #login-box {
     height: 340px;
     width: 350px;
-    //padding-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 1px 0 #8492a6;
     border: 1px solid #8492a6;
-    //padding: 20px 50px 30px 50px;
-    margin: 100px auto;
     background-color: white;
   }
 
