@@ -3,7 +3,7 @@
     <div id="box">
       <div id="title">注册</div>
       <el-form :model="ruleForm" ref="dynamicValidateForm" :rules="rulesInput" label-width="70px"
-               id="RegisterForm" style="padding-right: 40px;padding-top: 20px">
+               id="RegisterForm" style="padding-right: 40px;">
         <div style="padding-left: 20px">
           <el-form-item label="注册邮箱" prop="email"
                         :rules="[
@@ -47,13 +47,14 @@
 <style lang="less" rel="stylesheet/less">
   #box {
     margin: 100px auto;
-    height: 430px;
-    width: 400px;
+    //height: 430px;
+    width: 350px;
     border-radius: 5px;
     box-shadow: 0 0 1px 0 #8492a6;
     border: 1px solid #8492a6;
     background-color: white;
-    padding: 20px 0 20px 20px;
+    padding-bottom: 20px;
+    //padding: 20px 30px 20px 30px;
   }
 
   #title {

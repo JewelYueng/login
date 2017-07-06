@@ -1,9 +1,10 @@
 <template>
   <div>
     <div id="login-box">
-      <div id="title">帐号密码登录</div>
+      <div id="title">登录</div>
       <el-form :model="ruleForm" :rules="rulesInput" ref="ruleForm" label-width="60px"
                id="LoginForm">
+        <div style="padding-left: 20px">
         <el-form-item label="邮箱" prop="email">
           <el-input id="email" v-model="ruleForm.email" style="width: 240px;right: 10px"></el-input>
         </el-form-item>
@@ -26,6 +27,7 @@
         <el-form-item class="auto-login" style="margin-left: 0">
           <el-checkbox v-model="ruleForm.userRemember">下次自动登录</el-checkbox>
         </el-form-item>
+        </div>
       </el-form>
       <div  class="login-btn">
         <el-button type="primary" @click="login()">登陆</el-button>
@@ -36,12 +38,13 @@
 </template>
 <style lang="less" rel="stylesheet/less">
   #login-box {
-    height: 320px;
-    width: 300px;
+    height: 340px;
+    width: 350px;
+    //padding-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 1px 0 #8492a6;
     border: 1px solid #8492a6;
-    padding: 20px;
+    //padding: 20px 50px 30px 50px;
     margin: 100px auto;
     background-color: white;
   }
