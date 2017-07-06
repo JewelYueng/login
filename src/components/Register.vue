@@ -187,12 +187,13 @@
               email: this.ruleForm.email,
               validateCode: this.ruleForm.check,
             }).then((res) => {
-              if (res.data.code === 200) {
+              if (res.data.code === "200") {
                 console.log(res.data)
                 this.$message({
                   message: '邮件已发送，请注意查收',
                   type: 'success'
                 });
+                this.imgUrl = "/AssWeCan/home/code?date=" + Date()
               } else {
                 this.$message({
                   message: res.data.message,
