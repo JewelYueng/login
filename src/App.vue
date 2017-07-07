@@ -11,15 +11,18 @@ export default {
 </script>
 
 <style>
+  html{
+    height: 100%;
+  }
   body{
     background-image: url('/AssWeCan/static/img/background.jpg');
-    background-size: 100% auto;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 100%;
 
   }
 #app {
