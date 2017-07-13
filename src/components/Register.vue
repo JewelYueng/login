@@ -101,7 +101,10 @@
       let validateUserName = (rule, value, callback) => {
         if (value === '') {
           callback(new Error('用户名不能为空'));
-        } else {
+        }  else if( value.length > 32){
+          callback(new Error('不能使用大于32位的用户名'))
+        }
+        else {
           callback();
         }
       };
